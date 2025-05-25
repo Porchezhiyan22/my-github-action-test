@@ -1,0 +1,16 @@
+name: My Action With Email Step
+
+# This allows you to trigger the action manually from the Actions tab
+on:
+  workflow_dispatch:
+
+jobs:
+  email_named_step_job: # You can name this job anything
+    runs-on: ubuntu-latest # This tells GitHub to use a standard virtual machine
+    steps:
+      # This is the specific step required, with your email in its name
+      - name: 21f1001991@ds.study.iitm.ac.in
+        run: echo "Hello! This step is named with my email and it's running!"
+
+      - name: Completion Step
+        run: echo "Workflow has finished."
